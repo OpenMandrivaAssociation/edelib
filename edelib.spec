@@ -10,6 +10,7 @@ Source0:	http://downloads.sourceforge.net/project/ede/%{name}/%{version}/%{name}
 BuildRequires:	jam
 BuildRequires:	doxygen
 BuildRequires:	fltk-devel
+BuildRequires:	pkgconfig(dbus-1)
 
 %description
 edelib is small and portable C++ library for EDE (Equinox Desktop Environment).
