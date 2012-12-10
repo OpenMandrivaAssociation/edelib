@@ -2,7 +2,7 @@
 Name:		edelib
 Summary:	Equinox Desktop Environment library
 Version:	2.0
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		System/Libraries
 URL:		http://equinox-project.org/
@@ -11,6 +11,8 @@ BuildRequires:	jam
 BuildRequires:	doxygen
 BuildRequires:	fltk-devel
 BuildRequires:	pkgconfig(dbus-1)
+BuildRequires:	pkgconfig(cairo)
+BuildRequires:	pkgconfig(pixman-1)
 
 %description
 edelib is small and portable C++ library for EDE (Equinox Desktop Environment).
@@ -32,7 +34,8 @@ and development.
 %setup -q
 
 %build
-./configure --prefix=%{buildroot}/usr --libdir=%{buildroot}%{_libdir}
+%setup_compile_flags
+./configure --prefix=%{buildroot}%{_prefix} --libdir=%{buildroot}%{_libdir}
 sed -i 's|%{buildroot}||' *.pc edelib/edelib-config.h
 jam
 
@@ -46,3 +49,10 @@ jam install
 %{_libdir}/pkgconfig/*
 %{_libdir}/%{name}
 %doc %{_docdir}/%{name}-2.0.0
+
+
+%changelog
+* Tue Jun 05 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 2.0-1
++ Revision: 802744
+- imported package edelib
+
