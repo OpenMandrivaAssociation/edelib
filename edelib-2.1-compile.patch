@@ -1,0 +1,12 @@
+diff -up edelib-2.1/edelib/ts/scheme.h.omv~ edelib-2.1/edelib/ts/scheme.h
+--- edelib-2.1/edelib/ts/scheme.h.omv~	2019-01-22 03:42:40.025234015 +0100
++++ edelib-2.1/edelib/ts/scheme.h	2019-01-22 03:43:02.680532067 +0100
+@@ -15,7 +15,7 @@ extern "C" {
+ 
+ #define USE_INTERFACE 1
+ #define USE_MATH 0
+-#define INLINE inline
++#define INLINE /* edelib wants c89 style inline... */
+ 
+ /* If used as standalone interpreter */
+ #ifndef STANDALONE
