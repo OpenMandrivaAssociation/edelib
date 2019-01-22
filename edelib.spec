@@ -13,6 +13,9 @@ BuildRequires:	fltk-devel
 BuildRequires:	pkgconfig(dbus-1)
 BuildRequires:	pkgconfig(cairo)
 BuildRequires:	pkgconfig(pixman-1)
+BuildRequires:	pkgconfig(libjpeg)
+BuildRequires:	pkgconfig(xinerama)
+BuildRequires:	pkgconfig(xft)
 Patch0:		edelib-2.1-compile.patch
 
 %description
