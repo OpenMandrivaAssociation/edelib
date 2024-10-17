@@ -5,7 +5,7 @@ Version:	2.1
 Release:	1
 License:	GPLv2+
 Group:		System/Libraries
-URL:		http://equinox-project.org/
+URL:		https://equinox-project.org/
 Source0:	http://downloads.sourceforge.net/project/ede/%{name}/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	jam
 BuildRequires:	doxygen
