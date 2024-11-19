@@ -2,7 +2,7 @@
 Name:		edelib
 Summary:	Equinox Desktop Environment library
 Version:	2.1
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		System/Libraries
 URL:		https://equinox-project.org/
