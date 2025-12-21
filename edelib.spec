@@ -7,6 +7,11 @@ License:	GPLv2+
 Group:		System/Libraries
 URL:		https://equinox-project.org/
 Source0:	http://downloads.sourceforge.net/project/ede/%{name}/%{version}/%{name}-%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	jam
 BuildRequires:	doxygen
 BuildRequires:	fltk-devel
